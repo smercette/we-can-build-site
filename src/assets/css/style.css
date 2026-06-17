@@ -59,7 +59,7 @@ nav .lnk.active,nav .lnk:hover{color:var(--ink);}
 .hero p{font-size:19px;color:#54585f;margin:0 0 30px;}
 .cta-row{display:flex;gap:12px;flex-wrap:wrap;}
 .portrait{aspect-ratio:1/1;border-radius:24px;background:var(--violet-soft);display:flex;align-items:center;justify-content:center;color:var(--violet);font-weight:500;overflow:hidden;}
-.portrait img{width:100%;height:100%;object-fit:cover;}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:100% center;transform:scale(1.5) translate(-5%, 4%);}
 @media(max-width:780px){ .hero{grid-template-columns:1fr;} .portrait{max-width:360px;} .hero h1{font-size:40px;} }
 
 /* ===== Home sections ===== */

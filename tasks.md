@@ -7,11 +7,7 @@ Things that still need a human (mostly assets and external signups).
 All images go in `src/assets/images/`. Reference them from templates or post frontmatter using an absolute path starting with `/assets/images/...`.
 
 ### Hero photo of Sarah
-- **What:** Warm, real photo of you. Good light. Dimples encouraged (per brand guidelines).
-- **Shape:** Square. Ideally 800x800px or larger.
-- **Save as:** `src/assets/images/sarah-hero.jpg`
-- **Used on:** Home hero, About hero (same image, both places).
-- **Wire-up:** Tell me when it's saved and I'll swap the `[ your photo ]` placeholders for `<img>` tags.
+- [x] Saved at `src/assets/images/sarah-hero.jpg` and wired into home + about hero. Cropped to centre on the right side of the photo (Sarah). If you swap the file later for a solo shot, the templates will pick it up automatically; tell me and I'll re-tune the crop if needed.
 
 ### Cover image for each blog post
 - **What:** A cover image per post, following the We Can Build brand guidelines (white background, violet eyebrow, ink headline, generous white space, no logo). Sarah is making these by hand.
