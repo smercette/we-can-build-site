@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+---
+<main class="article">
+  {% if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
+  <h1>{{ title }}</h1>
+  <div class="meta">
+    <span class="avatar">SM</span>
+    <span>{{ site.author }}</span>
+    <span>&middot;</span>
+    <span>{{ page.date | readableDate }}</span>
+    {% if readTime %}<span>&middot;</span><span>{{ readTime }} read</span>{% endif %}
+  </div>
+  <hr class="rule" />
+
+  {% if youtubeId and videoPosition != 'bottom' %}
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/{{ youtubeId }}" title="{{ title }}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  {% endif %}
+
+  <article>
+    {{ content | safe }}
+  </article>
+
+  {% if youtubeId and videoPosition == 'bottom' %}
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/{{ youtubeId }}" title="{{ title }}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  {% endif %}
+
+  <div class="signup" id="signup">
+    <h3>Want each tutorial in your inbox?</h3>
+    <p>One short email when a new build-along goes live. No spam, no jargon.</p>
+    <form class="form" name="newsletter-post" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="newsletter-post" />
+      <input type="email" name="email" placeholder="you@email.com" aria-label="Email address" required />
+      <button class="btn" type="submit">Subscribe</button>
+    </form>
+  </div>
+</main>

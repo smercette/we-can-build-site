@@ -1,0 +1,53 @@
+---
+layout: layouts/base.njk
+title: Tutorials
+description: Build-along tutorials from We Can Build.
+permalink: /tutorials/index.html
+---
+
+<div class="head">
+  <p class="eyebrow">Tutorials</p>
+  <h1>Build-along tutorials</h1>
+  <p>Each one teaches you to build a real tool with AI, and run it yourself. We start small and work up to the big one. No tech background needed.</p>
+</div>
+
+<div class="grid">
+  {% for post in collections.posts | reverse %}
+  <div class="post">
+    <div class="thumb">
+      {% if post.data.youtubeId %}
+        <iframe src="https://www.youtube.com/embed/{{ post.data.youtubeId }}" title="{{ post.data.title }}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      {% else %}
+        [ cover image ]
+      {% endif %}
+    </div>
+    <div class="body">
+      <div class="row">
+        <span class="k">{{ post.data.label or 'Tutorial' }}</span>
+        <span class="pill live">{{ post.data.status or 'New' }}</span>
+      </div>
+      <h3>{{ post.data.title }}</h3>
+      <p>{{ post.data.summary }}</p>
+      <div class="row" style="justify-content:space-between;margin:0;">
+        <span class="meta">{{ post.date | readableDate }}{% if post.data.readTime %} &middot; {{ post.data.readTime }}{% endif %}</span>
+        <a class="read" href="{{ post.url }}">Read &rarr;</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+  {% for stub in upcoming %}
+  <div class="post">
+    <div class="thumb">[ cover image ]</div>
+    <div class="body">
+      <div class="row"><span class="k">{{ stub.label }}</span><span class="pill soon">Coming soon</span></div>
+      <h3>{{ stub.title }}</h3>
+      <p>{{ stub.summary }}</p>
+      <div class="row" style="justify-content:space-between;margin:0;">
+        <span class="meta">{{ stub.when }}</span>
+        <span class="meta">In the works</span>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

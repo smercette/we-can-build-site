@@ -1,0 +1,54 @@
+---
+layout: layouts/base.njk
+title: Sarah J Mercer
+description: Build your own tools with AI. No tech background needed.
+---
+
+{% set featured = collections.posts | reverse | first %}
+
+<div class="hero">
+  <div>
+    <p class="eyebrow">We Can Build</p>
+    <h1>Build your own tools with AI.</h1>
+    <p>I'm Sarah. I'm not a developer. My husband got me over the first hurdle, and now I build and ship everything in my startup myself. I'll teach you to do the same, one small tool at a time. No tech background needed.</p>
+    <div class="cta-row">
+      {% if featured %}<a class="btn" href="{{ featured.url }}">Start with the first lesson</a>{% endif %}
+      <a class="btn ghost" href="/tutorials/">Browse tutorials</a>
+    </div>
+  </div>
+  <div class="portrait">[ your photo ]</div>
+</div>
+
+<section>
+  <div class="sec-head"><h2>Start here</h2><a href="/tutorials/">All tutorials &rarr;</a></div>
+  {% if featured %}
+  <div class="feature">
+    <div class="ph">[ cover image ]</div>
+    <div>
+      <span class="tag">New</span>
+      <h3>{{ featured.data.title }}</h3>
+      <p>{{ featured.data.summary }}</p>
+      <a class="btn" href="{{ featured.url }}">Read the post</a>
+    </div>
+  </div>
+  {% endif %}
+</section>
+
+<section>
+  <div class="sec-head"><h2>What we'll build together</h2></div>
+  <div class="grid3">
+    <div class="card"><p class="k">Start small</p><h4>A timeline generator</h4><p>Turn a list of dates into a clean visual timeline. Your first real build.</p></div>
+    <div class="card"><p class="k">Demystify</p><h4>How software actually runs</h4><p>The scary-sounding bits, explained in plain English. No jargon left behind.</p></div>
+    <div class="card"><p class="k">The big one</p><h4>A passive time recorder</h4><p>The flagship: a tool that quietly writes up your time for you. Yours to keep.</p></div>
+  </div>
+</section>
+
+<div class="band" id="signup">
+  <h3>Want each tutorial in your inbox?</h3>
+  <p>One short email when a new build-along goes live. No spam, no jargon.</p>
+  <form class="form" name="newsletter" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="newsletter" />
+    <input type="email" name="email" placeholder="you@email.com" aria-label="Email address" required />
+    <button class="btn" type="submit">Subscribe</button>
+  </form>
+</div>
