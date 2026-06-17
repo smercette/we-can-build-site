@@ -59,10 +59,6 @@ You can use **bold**, *italic*, [links](https://example.com), and lists:
 
 Once saved, run `npm start` to preview, then `git add`, `git commit`, `git push`. Netlify rebuilds and deploys automatically.
 
-## Drafts
-
-Anything inside `src/drafts/` is ignored by Eleventy — it's a quiet place to keep in-progress posts without them appearing on the site. When a draft is ready to publish, move the `.md` file from `src/drafts/` to `src/posts/`, commit, and push. Netlify rebuilds and the post is live.
-
 ## Adding videos
 
 Videos live on YouTube. To embed one in a post, copy the 11-character ID from the URL (e.g. for `https://www.youtube.com/watch?v=dQw4w9WgXcQ`, the ID is `dQw4w9WgXcQ`) and paste it as `youtubeId:` in the frontmatter. The card on the tutorials grid will also show the embedded player.
