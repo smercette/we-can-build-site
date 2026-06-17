@@ -83,6 +83,13 @@ section{max-width:1040px;margin:0 auto;padding:24px;}
 .card p{margin:0;color:var(--slate);font-size:15px;}
 @media(max-width:780px){ .grid3{grid-template-columns:1fr;} }
 
+/* ===== Buttondown attribution under signup forms ===== */
+.bd-credit{font-size:11px;margin:12px 0 0;letter-spacing:.02em;}
+.bd-credit a{text-decoration:none;}
+.bd-credit a:hover{text-decoration:underline;}
+.band .bd-credit, .band .bd-credit a{color:rgba(255,255,255,.7);}
+.signup .bd-credit, .signup .bd-credit a{color:var(--slate);}
+
 /* ===== Signup band ===== */
 .band{background:var(--violet);color:#fff;border-radius:24px;padding:48px;text-align:center;margin:48px auto;max-width:992px;}
 .band h3{font-size:28px;font-weight:600;margin:0 0 10px;}

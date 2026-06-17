@@ -32,10 +32,10 @@ layout: layouts/base.njk
   <div class="signup" id="signup">
     <h3>Want each tutorial in your inbox?</h3>
     <p>One short email when a new build-along goes live. No spam, no jargon.</p>
-    <form class="form" name="newsletter-post" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="newsletter-post" />
+    <form class="form" action="https://buttondown.com/api/emails/embed-subscribe/WeCanBuild" method="post">
       <input type="email" name="email" placeholder="you@email.com" aria-label="Email address" required />
       <button class="btn" type="submit">Subscribe</button>
     </form>
+    <p class="bd-credit"><a href="https://buttondown.com/refer/WeCanBuild" target="_blank" rel="noopener">Powered by Buttondown</a></p>
   </div>
 </main>

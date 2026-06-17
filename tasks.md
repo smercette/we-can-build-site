@@ -39,10 +39,10 @@ All images go in `src/assets/images/`. Reference them from templates or post fro
 
 ## Mailing list
 
-- [ ] Decide between Buttondown (free up to 100 subs) and Beehiiv (free up to 2,500 subs).
-- [ ] Sign up to the chosen service.
-- [ ] Copy the embed form HTML out of their dashboard.
-- [ ] Paste it here and I'll swap the three Netlify forms (home band, about band, post page) for the real one.
+- [x] Decide between Buttondown (free up to 100 subs) and Beehiiv (free up to 2,500 subs). Chose Buttondown.
+- [x] Sign up to Buttondown.
+- [x] Wire the Buttondown embed form into the three signup blocks (home band, about band, post page).
+- [ ] (Optional, later) Set up a custom sending domain in Buttondown once the list grows.
 
 ## Deploy
 
