@@ -17,6 +17,8 @@ permalink: /tutorials/index.html
     <div class="thumb">
       {% if post.data.youtubeId %}
         <iframe src="https://www.youtube.com/embed/{{ post.data.youtubeId }}" title="{{ post.data.title }}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      {% elif post.data.cover %}
+        <img src="{{ post.data.cover }}" alt="{{ post.data.title }}" />
       {% else %}
         [ cover image ]
       {% endif %}

@@ -23,7 +23,13 @@ description: Build your own tools with AI. No tech background needed.
   <div class="sec-head"><h2>Start here</h2><a href="/tutorials/">All tutorials &rarr;</a></div>
   {% if featured %}
   <div class="feature">
-    <div class="ph">[ cover image ]</div>
+    <div class="ph">
+      {% if featured.data.cover %}
+        <img src="{{ featured.data.cover }}" alt="{{ featured.data.title }}" />
+      {% else %}
+        [ cover image ]
+      {% endif %}
+    </div>
     <div>
       <span class="tag">New</span>
       <h3>{{ featured.data.title }}</h3>
@@ -47,7 +53,7 @@ description: Build your own tools with AI. No tech background needed.
 <section>
   <div class="sec-head"><h2>Just want to use the tools?</h2></div>
   <div class="feature">
-    <div class="ph">[ tools shelf ]</div>
+    <div class="ph"><img src="/assets/images/nimble-tech-logo.svg" alt="Nimble Tech" /></div>
     <div>
       <span class="tag">Nimble Tech</span>
       <h3>Don't want to build things yourself? Check out Nimble Tech's library of tools.</h3>
