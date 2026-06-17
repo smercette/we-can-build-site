@@ -1,7 +1,13 @@
 {% set nav = pageNav or page.url %}
 <header class="site">
   <div class="bar">
-    <a class="brand" href="/"><span class="mark"><i></i><i></i><i></i></span> We Can Build</a>
+    <a class="brand" href="/">
+      <span class="mark"><i></i><i></i><i></i></span>
+      <span class="brand-text">
+        <span class="brand-name">We Can Build</span>
+        <span class="brand-by">by Sarah J Mercer</span>
+      </span>
+    </a>
     <nav>
       <a class="lnk {% if nav == '/' %}active{% endif %}" href="/">Home</a>
       <a class="lnk {% if '/tutorials' in nav %}active{% endif %}" href="/tutorials/">Tutorials</a>

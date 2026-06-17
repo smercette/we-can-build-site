@@ -29,7 +29,10 @@ header.site{
   max-width:1040px;margin:0 auto;padding:16px 24px;
   display:flex;align-items:center;justify-content:space-between;
 }
-.brand{display:flex;align-items:center;gap:12px;font-weight:600;font-size:18px;}
+.brand{display:flex;align-items:center;gap:12px;font-weight:600;font-size:18px;line-height:1.1;}
+.brand-text{display:flex;flex-direction:column;gap:2px;}
+.brand-name{font-weight:600;font-size:18px;}
+.brand-by{color:var(--slate);font-size:11px;font-weight:500;letter-spacing:.02em;}
 .mark{position:relative;width:26px;height:26px;flex:none;}
 .mark i{position:absolute;width:11px;height:11px;border-radius:3px;}
 .mark i:nth-child(1){left:0;top:0;background:var(--violet);}
