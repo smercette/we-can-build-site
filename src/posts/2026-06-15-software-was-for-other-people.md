@@ -32,10 +32,12 @@ And that is the whole point of what I am starting here.
 
 There are plenty of people, especially in law, showing off the clever things they have built with AI. Almost nobody is teaching ordinary people how to do it themselves. I want to be the person who does that. The Tom, if you like, who sits you down and gets you over the first hurdle.
 
-So here is the plan. Over this series I am going to teach you to build a real, genuinely useful tool, and then run it yourself on your own computer. Not a toy. The thing we are going to build is a passive time recording tool: something that sits quietly on your laptop, notices what you are working on, and writes it up for you, so you barely have to touch your time recording software again.
+So here is the rough plan, with an honest caveat at the top: I have not entirely decided yet how this series will be structured. What I do know is that I want to teach you to build a real, genuinely useful tool, and then run it yourself on your own computer. Not a toy. The big one I have in mind is a passive time recording tool: something that sits quietly on your laptop, notices what you are working on, and writes it up for you, so you barely have to touch your time recording software again.
 
 I originally thought I would build that tool and sell it to law firms. But legal tech is deafeningly noisy, and honestly I do not think it is something I can sell (or at least, not right now). So instead I am going to teach you to build it, and release the code for free. If it would have changed my life back when I was billing time in private practice, then maybe it will change yours too.
 
-By the time we have built this one slightly ambitious thing together, the simple things will feel easy.
+Whether the passive time recorder is the right first build for a beginners' series, or whether we start somewhere smaller and friendlier and work up, I am still chewing on. The list of things I might teach is on the tutorials page — they are all "maybes" for now. I will figure it out in the open, and you will see me think out loud as I go.
+
+By the time we have built something slightly ambitious together, whatever it ends up being, the simple things will feel easy.
 
 I am so glad you are here. Follow along, and let us get started.

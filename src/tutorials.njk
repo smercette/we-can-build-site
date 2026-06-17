@@ -6,9 +6,9 @@ permalink: /tutorials/index.html
 ---
 
 <div class="head">
-  <p class="eyebrow">Tutorials</p>
+  <p class="eyebrow">The series so far</p>
   <h1>Build-along tutorials</h1>
-  <p>Each one teaches you to build a real tool with AI, and run it yourself. We start small and work up to the big one. No tech background needed.</p>
+  <p>I'm just getting started, so the shape of this is still up for grabs. The live posts are below, followed by a handful of ideas I'm thinking about. The order might change, the list might change, and some of these might turn into something else entirely.</p>
 </div>
 
 <div class="grid">
@@ -37,15 +37,15 @@ permalink: /tutorials/index.html
   {% endfor %}
 
   {% for stub in upcoming %}
-  <div class="post">
-    <div class="thumb">[ cover image ]</div>
+  <div class="post stub">
+    <div class="thumb">Not built yet</div>
     <div class="body">
-      <div class="row"><span class="k">{{ stub.label }}</span><span class="pill soon">Coming soon</span></div>
+      <div class="row"><span class="k">{{ stub.label }}</span><span class="pill soon">Maybe</span></div>
       <h3>{{ stub.title }}</h3>
       <p>{{ stub.summary }}</p>
       <div class="row" style="justify-content:space-between;margin:0;">
         <span class="meta">{{ stub.when }}</span>
-        <span class="meta">In the works</span>
+        <span class="meta">Thinking about it</span>
       </div>
     </div>
   </div>

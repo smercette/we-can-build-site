@@ -107,6 +107,18 @@ section{max-width:1040px;margin:0 auto;padding:24px;}
 .post p{margin:0 0 16px;color:var(--slate);font-size:15px;flex:1;}
 .post .meta{color:var(--slate);font-size:13px;font-weight:500;}
 .post a.read{color:var(--violet);font-weight:600;font-size:15px;}
+
+/* Stub / "maybe" cards on the tutorials grid */
+.post.stub{background:#fafbfc;border-color:#eceef2;}
+.post.stub .thumb{background:#f0f1f4;color:var(--slate);}
+.post.stub .k{color:var(--slate);}
+.post.stub h3{color:var(--slate);}
+
+/* Greyed-out "idea" cards on the homepage */
+.card.idea{background:#fafbfc;border-color:#eceef2;}
+.card.idea .k{color:var(--slate);}
+.card.idea h4{color:var(--slate);}
+
 @media(max-width:740px){ .grid{grid-template-columns:1fr;} .head h1{font-size:34px;} }
 
 /* ===== Article ===== */
