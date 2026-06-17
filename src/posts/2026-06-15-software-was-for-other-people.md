@@ -6,6 +6,7 @@ label: "Start here"
 status: "New"
 readTime: "4 min"
 summary: "How a lawyer with zero coding background started building her own tools, and why I'm passing it on."
+cover: /assets/images/post-software-was-for-other-people.jpeg
 # youtubeId: "dQw4w9WgXcQ"        # uncomment and replace with the 11-char YouTube ID
 # videoPosition: "top"             # "top" (default) or "bottom"
 ---
