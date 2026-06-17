@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" preserveAspectRatio="xMidYMid meet" role="img" aria-label="We Can Build">
+  <rect width="256" height="256" fill="#ffffff"/>
+  <rect x="28" y="28" width="85" height="85" rx="23" fill="#4A56E2"/>
+  <rect x="143" y="28" width="85" height="85" rx="23" fill="#8E96F0"/>
+  <rect x="82" y="143" width="85" height="85" rx="23" fill="#C2C7F8"/>
+</svg>
