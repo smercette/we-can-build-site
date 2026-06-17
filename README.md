@@ -1,4 +1,4 @@
-# We Can Build — site
+# We Can Build site
 
 Sarah J Mercer's site for the *We Can Build* series. Built with [Eleventy](https://www.11ty.dev/), deployed to Netlify.
 
@@ -27,7 +27,7 @@ Each post is a single Markdown file in `src/posts/`. Name it with the date in fr
 src/posts/2026-07-01-my-second-post.md
 ```
 
-The top of the file is the "frontmatter" — a little block of settings between `---` lines:
+The top of the file is the "frontmatter", a little block of settings between `---` lines:
 
 ```markdown
 ---
@@ -39,7 +39,7 @@ status: "New"                # the violet pill on the grid card
 readTime: "6 min"
 summary: "One-line teaser shown on the tutorials grid and homepage."
 
-# Optional video — paste just the 11-character YouTube ID (the bit after v=)
+# Optional video. Paste just the 11-character YouTube ID (the bit after v=)
 youtubeId: "dQw4w9WgXcQ"
 videoPosition: "top"          # "top" (default) or "bottom"
 ---
@@ -93,4 +93,4 @@ Colours, fonts, and tone follow `WeCanBuild/Brand/Brand-Guidelines.md`. Violet i
 3. Netlify reads `netlify.toml` and uses `npm run build` -> `_site` automatically.
 4. Done. Every `git push` to main triggers a new deploy.
 
-The newsletter forms use Netlify Forms — submissions show up in the Netlify dashboard. Free tier covers 100 submissions/month.
+The newsletter forms post to Buttondown. Subscribers show up in your Buttondown dashboard. Free tier covers up to 100 subscribers.

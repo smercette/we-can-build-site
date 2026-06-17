@@ -26,7 +26,7 @@ All images go in `src/assets/images/`. Reference them from templates or post fro
   Templates already check for `cover:` and render the image automatically. If a post has no `cover:` it falls back to a "[ cover image ]" placeholder.
 
 ### Outstanding post covers
-- [ ] First post — `2026-06-15-software-was-for-other-people.md`
+- [ ] First post: `2026-06-15-software-was-for-other-people.md`
 
 ### OG image (optional, for social link previews)
 - **Shape:** 1200x630px.
@@ -42,7 +42,7 @@ All images go in `src/assets/images/`. Reference them from templates or post fro
 
 ## Deploy
 
-- [ ] Create empty GitHub repo (no README, no .gitignore, no licence — we have them already).
+- [ ] Create empty GitHub repo (no README, no .gitignore, no licence, since we have them already).
 - [ ] Send the repo URL over. I'll add the remote and push the existing commits.
 - [ ] Connect Netlify to the repo (Add new site -> Import existing project -> pick repo). Netlify reads `netlify.toml` automatically.
 - [ ] Optional: point a custom domain at Netlify.

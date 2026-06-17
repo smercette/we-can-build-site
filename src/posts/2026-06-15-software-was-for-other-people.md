@@ -36,7 +36,7 @@ So here is the rough plan, with an honest caveat at the top: I have not entirely
 
 I originally thought I would build that tool and sell it to law firms. But legal tech is deafeningly noisy right now, and honestly I don't think it is something I can sell (or at least, not right now). So instead I am going to teach you to build it, and release the code for free. If it would have changed my life back when I was billing time in private practice, then maybe it will change yours too.
 
-Whether the passive time recorder is the right first build for a beginners' series, or whether we start somewhere smaller and friendlier and work up, I am still chewing on. The list of things I might teach is on the tutorials page — they are all "maybes" for now. I will figure it out in the open, and you will see me think out loud as I go.
+Whether the passive time recorder is the right first build for a beginners' series, or whether we start somewhere smaller and friendlier and work up, I am still chewing on. The list of things I might teach is on the tutorials page. They are all "maybes" for now. I will figure it out in the open, and you will see me think out loud as I go.
 
 By the time we have built something slightly ambitious together, whatever it ends up being, the simple things will feel easy.
 
