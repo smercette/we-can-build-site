@@ -4,7 +4,9 @@ title: Sarah J Mercer
 description: Build your own tools with AI. No tech background needed.
 ---
 
-{% set featured = collections.posts | reverse | first %}
+{% set introPost = collections.posts | first %}
+{% set latestPost = collections.posts | reverse | first %}
+{% set startHerePosts = [latestPost, introPost] if introPost.url != latestPost.url else [introPost] %}
 
 <div class="hero">
   <div>
@@ -12,7 +14,7 @@ description: Build your own tools with AI. No tech background needed.
     <h1>Build your own tools with AI.</h1>
     <p>I'm Sarah. I believe there are many smart, capable people who could be building their own software but are stuck on the launchpad. I'm on a mission to change that.</p>
     <div class="cta-row">
-      {% if featured %}<a class="btn" href="{{ featured.url }}">Read the first post</a>{% endif %}
+      {% if latestPost %}<a class="btn" href="{{ latestPost.url }}">Read the latest post</a>{% endif %}
       <a class="btn ghost" href="/tutorials/">See what's coming</a>
     </div>
   </div>
@@ -21,32 +23,40 @@ description: Build your own tools with AI. No tech background needed.
 
 <section>
   <div class="sec-head"><h2>Start here</h2><a href="/tutorials/">All tutorials &rarr;</a></div>
-  {% if featured %}
-  <div class="feature">
-    <div class="ph">
-      {% if featured.data.cover %}
-        <img src="{{ featured.data.cover }}" alt="{{ featured.data.title }}" />
-      {% else %}
-        [ cover image ]
-      {% endif %}
+  <div class="grid">
+    {% for post in startHerePosts %}
+    <div class="post">
+      <div class="thumb">
+        {% if post.data.cover %}
+          <img src="{{ post.data.cover }}" alt="{{ post.data.title }}" />
+        {% else %}
+          [ cover image ]
+        {% endif %}
+      </div>
+      <div class="body">
+        <div class="row">
+          <span class="k">{{ post.data.label or 'Tutorial' }}</span>
+          {% if post.data.status %}<span class="pill live">{{ post.data.status }}</span>{% endif %}
+        </div>
+        <h3>{{ post.data.title }}</h3>
+        <p>{{ post.data.summary }}</p>
+        <div class="row" style="justify-content:space-between;margin:0;">
+          <span class="meta">{{ post.date | readableDate }}{% if post.data.readTime %} &middot; {{ post.data.readTime }}{% endif %}</span>
+          <a class="read" href="{{ post.url }}">Read &rarr;</a>
+        </div>
+      </div>
     </div>
-    <div>
-      <span class="tag">New</span>
-      <h3>{{ featured.data.title }}</h3>
-      <p>{{ featured.data.summary }}</p>
-      <a class="btn" href="{{ featured.url }}">Read the post</a>
-    </div>
+    {% endfor %}
   </div>
-  {% endif %}
 </section>
 
 <section>
   <div class="sec-head"><h2>Ideas I'm chewing on</h2></div>
-  <p style="color:#54585f;font-size:16px;margin:0 0 18px;max-width:640px;">I haven't fully decided what this series will look like yet. These are some of the things on my list. They might all happen, they might not, and the order will almost certainly shift.</p>
+  <p style="color:#54585f;font-size:16px;margin:0 0 18px;max-width:640px;">Lesson 1 is up. Here's the rough shape of what might come next. The order will shift, some of these might turn into something else, and a few new ones will probably appear.</p>
   <div class="grid3">
-    <div class="card idea"><p class="k">Maybe first</p><h4>A timeline generator</h4><p>Turn a list of dates into a clean visual timeline. Could be a friendly first build.</p></div>
-    <div class="card idea"><p class="k">Maybe</p><h4>How software actually runs</h4><p>The scary-sounding bits, explained in plain English. No jargon left behind.</p></div>
-    <div class="card idea"><p class="k">The big one, maybe</p><h4>A passive time recorder</h4><p>The tool that got me hooked on building. Whether it's the right fit for a beginners' series, I'm still working out.</p></div>
+    <div class="card idea"><p class="k">Next up</p><h4>A small everyday tool</h4><p>A decision log, a converter, a "what should I cook" picker &mdash; same shape as the habit tracker, different use.</p></div>
+    <div class="card idea"><p class="k">A bit later</p><h4>Tools that remember things</h4><p>The step from one-shot HTML to "my tool remembers what I told it last time".</p></div>
+    <div class="card idea"><p class="k">The big one, maybe</p><h4>A passive time recorder</h4><p>The tool that started all of this for me. Still the destination.</p></div>
   </div>
 </section>
 
