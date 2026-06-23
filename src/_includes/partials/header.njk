@@ -9,11 +9,27 @@
       <span class="brand-by">by Sarah J Mercer, founder of <a href="https://nimbletech.uk">Nimble Tech</a></span>
     </div>
     <nav>
-      <a class="lnk {% if nav == '/' %}active{% endif %}" href="/">Home</a>
-      <a class="lnk {% if '/tutorials' in nav %}active{% endif %}" href="/tutorials/">Tutorials</a>
-      <a class="lnk {% if '/about' in nav %}active{% endif %}" href="/about/">About</a>
-      <a class="lnk {% if '/contact' in nav %}active{% endif %}" href="/contact/">Contact</a>
+      <div class="nav-links" id="nav-links">
+        <a class="lnk {% if nav == '/' %}active{% endif %}" href="/">Home</a>
+        <a class="lnk {% if '/tutorials' in nav %}active{% endif %}" href="/tutorials/">Tutorials</a>
+        <a class="lnk {% if '/about' in nav %}active{% endif %}" href="/about/">About</a>
+        <a class="lnk {% if '/contact' in nav %}active{% endif %}" href="/contact/">Contact</a>
+      </div>
       <a class="btn" href="/#signup">Subscribe</a>
+      <button class="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </div>
 </header>
+<script>
+  (function(){
+    var btn = document.querySelector('.hamburger');
+    var links = document.getElementById('nav-links');
+    if(!btn || !links) return;
+    btn.addEventListener('click', function(){
+      var open = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>

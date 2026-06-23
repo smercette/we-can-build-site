@@ -4,8 +4,8 @@ title: Sarah J Mercer
 description: Build your own tools with AI. No tech background needed.
 ---
 
-{% set introPost = collections.posts | first %}
-{% set latestPost = collections.posts | reverse | first %}
+{% set latestPost = collections.posts | first %}
+{% set introPost = collections.posts | reverse | first %}
 {% set startHerePosts = [latestPost, introPost] if introPost.url != latestPost.url else [introPost] %}
 
 <div class="hero">
