@@ -125,7 +125,7 @@ Let's tally up. In about ten minutes, you have:
 - Found out what "locally" actually means
 - Demystified file extensions for the rest of your life
 
-That's the foundation. Let me know how you got on in the comments (or email me if you got stuck). The passive time recording tool we are heading toward is just more of this, with a few extra ideas layered on. What fun.
+That's the foundation. Email me to let me know how you got on, or if you got stuck. The passive time recording tool we are heading toward is just more of this, with a few extra ideas layered on. What fun.
 
 **Next time**: we are going to tidy this up, give it a proper folder of its own (rather than letting it float around in Downloads), and I'll introduce you, gently and painlessly, to something called GitHub, which is basically just an online database where all the different versions of your code files live forever. So if your laptop ever dies, or you ever want the version of your habit tracker that existed last Tuesday, you can find it, and you can share it with someone else with a link.
 
