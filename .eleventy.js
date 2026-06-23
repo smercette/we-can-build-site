@@ -7,6 +7,12 @@ module.exports = function(eleventyConfig) {
     return date.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
   });
 
+  eleventyConfig.addFilter("rssDate", (d) => {
+    if (!d) return "";
+    const date = d instanceof Date ? d : new Date(d);
+    return date.toUTCString();
+  });
+
   eleventyConfig.addCollection("posts", (api) =>
     api.getFilteredByGlob("src/posts/*.md").sort((a, b) => b.date - a.date)
   );
