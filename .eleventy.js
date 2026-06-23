@@ -11,6 +11,10 @@ module.exports = function(eleventyConfig) {
     api.getFilteredByGlob("src/posts/*.md").sort((a, b) => b.date - a.date)
   );
 
+  eleventyConfig.addShortcode("clip", (src, alt) =>
+    `<video src="/assets/videos/${src}" autoplay loop muted playsinline aria-label="${alt}"></video>`
+  );
+
   return {
     dir: {
       input: "src",
